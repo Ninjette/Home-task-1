@@ -19,6 +19,10 @@ module.exports = {
 	module: {
 		loaders: [
 			{
+				test: /\.css$/,
+				loader: 'style-loader!css-loader!autoprefixer-loader'
+			},
+			{
 				test: /\.scss$/,
 				loader: 'style-loader!css-loader?minimize!autoprefixer-loader!sass-loader'
 			},
@@ -37,6 +41,10 @@ module.exports = {
 			{
 				test: /\.js$/,
 				loader: 'babel?presets[]=es2015'
+			},
+			{
+				test: /\.html$/,
+				loader: 'raw'
 			}
 		]
 	},
