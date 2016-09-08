@@ -1,0 +1,31 @@
+.btn{
+	position: absolute;
+	right: 90px;
+	top: 50%;
+	padding: 0;
+	transform: translateY(-50%);
+	&__content{
+		position: relative;
+		height: 20px;
+		font-size: 11px;
+		padding: 1px 8px 1px 6px;
+		font-weight: 500;
+		color: #fff;
+		cursor: pointer;
+		background-color: #1b95e0;
+		border-radius: 3px;
+		box-sizing: border-box;
+		&:hover{
+			background-color: #0c7abf;
+		}
+	}
+	&__icon{
+		width: 12px;
+		height: 12px;
+		margin-right: 4px;
+		display: inline-block;
+		vertical-align: middle;
+		background: url("../images/icons/twitter-logo.png");
+		background-size: contain;
+	}
+}

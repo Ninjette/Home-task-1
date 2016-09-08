@@ -1,0 +1,22 @@
+.footer{
+	padding: 10px 0;
+	text-align: center;
+	&__logo-media{
+		width: 150px;
+		height: 29px;
+	}
+	&__title{
+		color: #fff;
+		font-size: 10px;
+	}
+	&__link{
+		// color: #0088cc;
+		&:hover{
+			// color: #005580;
+		}
+	}
+	&__decor{
+		width: 75%;
+		margin: 0 auto 9px;
+	}
+}

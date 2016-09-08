@@ -1,0 +1,43 @@
+doctype html
+html
+	head
+		- var page_name = "Temp"
+		include ./includes/head.jade
+
+	body
+		include ./includes/header.jade
+
+		main(ng-app="listApp")
+			div(ng-controller="mainController")
+				section.section-search.clearfix
+					.announcement
+						p.announcement__title See also :
+						a(href="#").announcement__link
+							img(src="http://jsbooks.revolunet.com/./img/logo_pythonbooks.png", alt="python logo").announcement__media
+					form(action="").search
+						input(type="text", ng-model="searchBox", placeholder="search").search__input
+					.filter
+						p.filter__title Filter by :
+						ul.filter__list
+							li.filter__elem
+								a(href="").filter__item.active All
+							li.filter__elem
+								a(href="").filter__item Beginner
+							li.filter__elem
+								a(href="").filter__item Intermediate
+							li.filter__elem
+								a(href="").filter__item Advanced
+				section.section-products
+					.product(ng-repeat="product in products.books | filter:searchBox")
+						a(href="{{product.url}}").product__link
+							.product__cover read
+							.product__media(style="background-image: url('{{product.cover}}')")
+						a(href="{{product.url}}")
+							h2.product__title {{product.title}}
+						a(href="{{product.authorUrl}}").product__author {{product.author}}
+						p.product__level {{product.level}}
+						p.product__description {{product.info}}
+
+
+
+		include ./includes/footer.jade

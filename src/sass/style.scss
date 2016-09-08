@@ -1,0 +1,16 @@
+@import "base/vars.scss";
+@import "base/mixins.scss";
+//@import "base/normalize";
+@import "base/base.scss";
+@import "base/layout.scss";
+//Objects rules
+@import "objects/items.scss";
+@import "objects/header.scss";
+@import "objects/footer.scss";
+@import "objects/forms.scss";
+@import "objects/objects.scss";
+//State rules
+@import "state/state.scss";
+@import "state/laptop.scss";
+@import "state/tablet.scss";
+@import "state/mobile.scss";

@@ -1,0 +1,15 @@
+// Tablet
+@media (max-width: 991px) {
+	.header{
+		&__link{
+			display: none;
+		}
+		&__info{
+			display: none;
+		}
+	}
+	.btn{
+		display: none;
+	}
+
+}

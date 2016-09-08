@@ -1,0 +1,30 @@
+// Mobile
+@media (max-width: 767px) {
+	.header{
+		&__logo{
+			max-width: 140px;
+			max-height: 40px;
+		}
+		&__subtitle{
+			display: none;
+		}
+		&__title{
+			font: normal 14px 'Open Sans Condensed', sans-serif;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	
+}
+
+@media (max-width: 480px) {
+	.filter{
+		&__title{
+			float: none;
+		}
+		&__list{
+			padding-left: 0;
+		}
+	}
+}
